@@ -1,0 +1,29 @@
+.banner {
+    height: 3rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-dark {
+    background-color: black;
+    color: snow;
+}
+
+.banner > .title {
+    margin-left: 20px;
+    font-family: 'Comic sans ms';
+    font-size: 2rem;
+} 
+
+.logo-epicura {
+    padding: 5px;
+    border: transparent 1px solid;
+    border-radius: 10px;
+    padding: 6px;
+    background-color: transparent;
+}
+
+.logo-epicura:hover {
+    background-color: hotpink;
+}

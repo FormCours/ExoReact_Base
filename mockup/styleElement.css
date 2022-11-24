@@ -1,0 +1,41 @@
+.task {
+    display: flex;
+    flex-direction: row;   
+    padding: 5px;
+    min-height: 60px;
+}
+
+.taskInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.taskAction {
+    display: flex;
+    flex-direction: column;
+}
+
+.isDone {
+    background: repeating-linear-gradient(
+        45deg, 
+        rgba(177, 177, 177, 0.60), 
+        rgba(177, 177, 177, 0.60) 15px, 
+        white 15px, 
+        white 30px
+    );
+}
+
+.urgent {
+    border: 1px solid transparent;
+    border-radius: 1ex;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: crimson;
+    color: snow;
+}
+
+.isDone .urgent {
+    background-color: rgb(255, 91, 91);
+}
+

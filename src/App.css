@@ -1,38 +1,75 @@
 .App {
-  text-align: center;
+  width: 80vw;
+  margin: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2rem;
+  margin: 0px 0px 20px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+  font-size: 1.8rem;
+  font-weight: normal;
+  margin: 0px 0px 10px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3, p {
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+button {
+  border: 1px solid transparent;
+  border-radius: 1ex;
+  padding-top: 0.5ex;
+  padding-bottom: 0.5ex;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  margin: 1px;
+
+  background-color: rgb(60, 60, 60);
+  color: snow;
+}
+
+button:disabled {
+  background-color: gray;
+}
+
+button:active {
+  color: hotpink;
+}
+
+button:hover:not(:disabled) {
+  cursor: pointer;
+  background-color: black;
+}
+
+select {
+  background-color: transparent;
+}
+
+input, textarea, select {
+  border: 1px solid black;
+  border-radius: 1ex;
+  padding-left: 1ex;
+  padding-right: 1ex;
+  box-sizing:content-box;
+}
+
+input, select {
+  height: 1.2rem;
+}
+
+textarea{
+  height: 3.6rem;
 }

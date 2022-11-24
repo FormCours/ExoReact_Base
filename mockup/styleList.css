@@ -1,0 +1,8 @@
+.listApp {
+    width: 100%;
+}
+
+.listContent {
+    max-height: 40vh;
+    overflow-y: auto;
+}

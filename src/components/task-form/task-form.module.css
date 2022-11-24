@@ -1,0 +1,64 @@
+.formTask form {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto 70px;
+    grid-template-rows: repeat(3, auto);
+    margin-bottom: 20px;
+}
+
+.inputUser {
+    display: flex;
+}
+
+
+.formTask label {
+    min-width: 100px;
+}
+.formTask label::after {
+    content: ' :';
+    padding-right: 3px;
+}
+.formTask input,.formTask textarea, .formTask select {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    font-family: 'Comic Sans MS';
+    font-weight: normal;
+    font-size: 0.8rem;
+    
+    resize: none;
+}
+
+.error input,.error textarea, .error select {
+    border-color: crimson;
+    background-color: lavenderblush;
+}
+
+.inputName , .inputDesc {  
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.inputName {
+    grid-row: 1;
+}
+
+.inputDesc {
+    grid-row: 2;
+}
+
+.inputPrio {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row: 3;
+}
+
+.actionSubmit {
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+}
+
+.actionSubmit button {
+    flex-grow: 1;
+}

@@ -1,0 +1,70 @@
+h1 {
+    font-size: 2rem;
+    margin: 0px 0px 20px 0px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin: 0px 0px 10px 0px;
+}
+
+h3, p {
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 1ex;
+    padding-top: 0.5ex;
+    padding-bottom: 0.5ex;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    margin: 1px;
+
+    background-color: rgb(60, 60, 60);
+    color: snow;
+}
+
+button:disabled {
+    background-color: gray;
+}
+
+button:active {
+    color: hotpink;
+}
+
+button:hover:not(:disabled) {
+    cursor: pointer;
+    background-color: black;
+}
+
+select {
+    background-color: transparent;
+}
+
+input, textarea, select {
+    border: 1px solid black;
+    border-radius: 1ex;
+    padding-left: 1ex;
+    padding-right: 1ex;
+    box-sizing:content-box;
+}
+
+input, select {
+    height: 1.2rem;
+}
+
+textarea{
+    height: 3.6rem;
+}

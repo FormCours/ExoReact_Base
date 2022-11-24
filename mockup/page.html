@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFormulaire.css">
+    <link rel="stylesheet" href="styleList.css">
+    <link rel="stylesheet" href="styleElement.css">
+</head>
+<body>
+    <h1>Mockup - CSS</h1>
+    
+    <article class="formTask">
+        <h2>Le formulaire</h2>
+        <form>
+            <div class="inputUser inputName error">
+                <label for="">Nom</label>
+                <input type="text">
+            </div>
+            <div class="inputUser inputDesc">
+                <label for="">Description</label>
+                <textarea name="" id=""></textarea>
+            </div>
+            <div class="inputUser inputPrio">
+                <label for="">Priorité</label>
+                <select>
+                    <option value="">Urgent</option>
+                    <option value="">Normal</option>
+                    <option value="">Basse</option>
+                </select>
+            </div>
+            <div class="actionSubmit">
+                <button type="submit">Ajouter</button>
+            </div>
+        </form>
+    </article>
+
+
+    <article class="listApp">
+        <h2>La liste des taches</h2>
+        <div class="listContent">
+            <section class="task isDone">
+                <div class="taskInfo">
+                    <h3>Faire le CSS <span class="urgent">Urgent</span></h3>
+                    <p>Ceci est une description</p>
+                </div>
+                <div class="taskAction">
+                    <button disabled>Terminer</button>
+                    <button>Suprimer</button>
+                </div>
+            </section>
+            <section class="task">
+                <div class="taskInfo">
+                    <h3>Demo <span class="urgent">Urgent</span></h3>
+                    <p>Ceci est une description</p>
+                </div>
+                <div class="taskAction">
+                    <button disabled>Terminer</button>
+                    <button>Suprimer</button>
+                </div>
+            </section>
+            <section class="task">
+                <div class="taskInfo">
+                    <h3>Tester</h3>
+                    <p>Ceci est une description</p>
+                </div>
+                <div class="taskAction">
+                    <button>Terminer</button>
+                    <button>Suprimer</button>
+                </div>
+            </section>
+        </div>
+    </article>
+
+</body>
+</html>
